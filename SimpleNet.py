@@ -57,7 +57,7 @@ optimizer = optim.Adam(model.parameters(), lr=0.001)
 # -----------------------------------------------
 # 4. 训练循环
 # -----------------------------------------------
-for epoch in range(10):
+for epoch in range(50):
     model.train()
     total_loss = 0
 
@@ -73,7 +73,7 @@ for epoch in range(10):
 
         total_loss += loss.item()
 
-    print(f"Epoch {epoch+1}/10  |  Loss: {total_loss/len(train_loader):.4f}")
+    print(f"Epoch {epoch+1}/50  |  Loss: {total_loss/len(train_loader):.4f}")
 
 # -----------------------------------------------
 # 5. 评估
